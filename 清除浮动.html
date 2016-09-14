@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.bigbox{
+			background-color: red;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			float: left;
+		}
+        .clearFix:before ,.clearFix:after{
+        	content: "";
+        	clear: both;
+        	display: block;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="bigbox clearFix ">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.big-box{
+			width: 300px;
+			height: 300px;
+			padding:100px;
+			border:1px solid red;
+			margin:100px auto;
+		}
+		.small-box{
+			width: 300px;
+			height: 200px;
+			border:1px solid red;
+			perspective:500px;
+			transform-style:preserve-3d;
+			transition:transform 3s linear;
+		}
+		.zheng{
+			width: 300px;
+			height: 200px;
+			background-color:blue;
+			position: absolute;
+			z-index: 10;
+			backface-visibility:hidden;
+		}
+		.fan{
+			width: 300px;
+			height: 200px;
+			background-color:green;
+			position: absolute;			
+			transform:rotateY(180deg);
+		}
+		.small-box:hover{
+			transform:rotateY(180deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="big-box">
+		<div class="small-box">
+			<div class="zheng">正面</div>
+			<div class="fan">反面</div>
+		</div>
+	</div>
+</body>
+</html>

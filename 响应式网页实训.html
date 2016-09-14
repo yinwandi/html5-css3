@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="xys.css">
+</head>
+<body>
+	<header>
+		<h1>秦皇岛博易科技</h1>
+		<p>秦皇岛博易科技暑期班</p>
+		<nav>
+			<div class="nav">
+				<button class="btn">菜单</button>
+				<ul class="list">
+					<li><a href="">主页1</a></li>
+					<li><a href="">主页2</a></li>
+					<li><a href="">主页3</a></li>
+					<li><a href="">主页4</a></li>
+					<li><a href="">主页5</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="text">
+				<button>搜索</button>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<article>
+			<img src="images/logo1.jpg" alt="" class="pic1">
+			<img src="images/face01.jpg" alt="" class="pic2">
+			<div class="zi">
+				<h4>开始报名了</h4>
+				<p>秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛</p>
+			</div>
+			<div class="k2">
+				<img src="images/logo2.jpg" alt=""
+				class="pic3">
+				<img src="images/face02.gif" alt="" class="pic4">
+				<h4>小故事</h4>
+				<p>秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛</p>
+			</div>
+			<div class="k3">
+				<img src="images/logo3.jpg" alt=""
+				class="pic5">
+				<img src="images/face03.jpg" alt="" class="pic6">
+				<h4>小故事</h4>
+				<p>秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛秦皇岛</p>
+			</div>
+		</article>
+		<aside>
+			<div class="box1">
+				<ul class="list1">
+					<li class="li1">文章分类</li>
+					<li><a href="">最新消息</a></li>
+					<li><a href="">面试问题</a></li>
+					<li><a href="">技术博客</a></li>
+					<li><a href="">教学板块</a></li>
+				</ul>
+			</div>
+			<div class="box2">
+				<ul class="list2">
+					<li>最新评论</li>
+					<li>yayayyayay</li>
+					<li>hahahah</li>
+					<li>wawawaaw</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="clear"></div>
+	</section>
+	<footer>
+		<p>yayayaayayayayayayayayaya</p>
+	</footer>A
+
+	<script src="jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+			$(".list li").slideToggle(20)
+		})
+		$(window).resize(function(){
+			if($(this).width()<640){
+				$(".list li").css("display","none")
+			}else{
+				$(".list li").css("display","block")
+			}
+		})
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var obj={
+			name:"li",
+			age:12,
+			sex:"male",
+			friends:["xiao","yang"],
+			data:{
+				li:"yang"
+			}
+		}
+		function fun(obj){
+			if( obj instanceof Array){
+				var newobj=[];
+			}else if(obj instanceof Object){
+                var newobj={};
+			}
+			for(var k in obj){
+				if(typeof(obj[k])=="object"){
+					newobj[k]=fun(obj[k]);
+				}else{
+					 newobj[k]=obj[k];
+				}
+			 
+			}
+			return newobj;
+		}
+		var obj1=fun(obj);
+		obj1.name="wang";
+		obj.friends[1]="hua";
+		obj.data="ya";
+		console.log(obj);
+		console.log(obj1);
+	</script>
+</body>
+</html>

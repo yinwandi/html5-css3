@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	.btn{
+		z-index: 10;
+	}
+		.box{
+			width: 300px;
+			height: 700px;
+			background-color:blue;
+			margin-top: -40px;
+            margin-left: -300px;
+			z-index: 100;
+			
+		}
+		.move{
+			
+			transition:transform 1s linear;
+			transform:translate(300px);
+		}
+		.move1{
+			transition:transform 1s linear;
+			transform:translate(0px);
+		}
+		.list li{
+			
+			width: 200px;
+			height: 80px;
+			list-style: none;
+			text-align: center;
+			line-height: 80px;
+		}
+		.btn2{
+			z-index: 20;
+			width: 30px;
+			height: 50px;
+			background-color: red;
+			float:right;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="菜单" class="btn">
+	<div class="box">
+		<input type="button" class="btn2" value="关闭">
+		<ul class="list">
+			
+			<li><a href="">百度</a></li>
+			<li><a href="">新浪</a></li>
+			<li><a href="">谷歌</a></li>
+		</ul>
+	</div>
+	<script src="jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+			$(".box").addClass("move")
+			$(".box").removeClass("move1")
+		})
+		$(".btn2").click(function(){
+		
+			$(".box").addClass("move1")
+		})
+		
+	</script>
+</body>
+</html>

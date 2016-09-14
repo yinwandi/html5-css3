@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var obj={
+			name:"li",
+			age:12,
+			sex:"male",
+			friends:["xiao","yang"]
+		}
+		function fun(obj){
+			var newobj={}
+			for(var k in obj){
+			  newobj[k]=obj[k];
+			}
+			return newobj;
+		}
+		var obj1=fun(obj)
+		obj1.name="wang";
+		obj.friends[0]="ya"
+		console.log(obj)
+		console.log(obj1)
+	</script>
+</body>
+</html>

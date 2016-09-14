@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.big-box1{
+		width: 101px;
+		height: 101px;
+		border:1px solid yellow;
+		margin:100px auto;
+		overflow: hidden;
+	}
+       .box{
+       	width: 100px;
+       	height: 100px;
+       	background-color: red;
+              z-index: 9;
+       	
+       /*	transform-origin:left top;
+       	transition:transform .5s linear 1s;*/
+       }
+       
+		.box1{
+       	width: 100px;
+       	height: 100px;
+       	background-color: blue;
+       	transform-origin:left top;
+       	transition:transform .5s linear 1s;
+              transform:rotate(90deg);
+       }
+       .big-box1 .box .move{
+       	transform:rotate(0deg);
+       	
+       }
+       /*.big-box1:hover{
+       	transform:rotate(-180deg);
+       }*/
+	</style>
+</head>
+<body>
+	<div class="big-box1">
+		<div class="box">
+                 <div class="box1"></div>    
+              </div>
+		
+	</div>
+	<script src="script/jquery.js"></script>
+	<script>
+
+          $(".box").hover(function(){
+              $(this).find(".box1").toggleClass("move")
+          })
+
+	</script>
+</body>
+</html>

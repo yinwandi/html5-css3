@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.image{
+			margin:0px auto;
+			animation:myanim 5s linear .1s infinite;
+		}
+		@keyframes myanim{
+			100%{
+				transform:rotate(360deg);
+			}
+		}
+		.box .move{
+			
+			animation-play-state:paused;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<audio src="CNBLUE.mp3" id="music" autoplay></audio>
+		<img src="record.png" alt="" class="image">
+	</div>
+	<script src="script/jquery.js"></script>
+	<script>
+	    
+		$(".image").click(function(){
+			if(music.paused){
+				music.play()
+			}else{
+				music.pause()
+			}
+			$(this).toggleClass("move")
+
+		})
+
+
+	</script>
+</body>
+</html>
